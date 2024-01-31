@@ -1,6 +1,34 @@
 @media (max-width:600px){
-    h2{
-        font-size: 50px;
-        background-color: violet;
+    header {
+        flex-direction: column;
+        align-items: flex-start;
     }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    /******Footer Start*************/
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    /******Footer End*************/
+
+
+
 }
