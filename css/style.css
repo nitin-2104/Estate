@@ -75,9 +75,58 @@ nav a:hover {
     height: 100vh;
 }
 
-#page4{
+/********Login form*****************************/
+
+
+.contact-section {
+    background-color: #9c5f5f;
+    padding: 50px 0;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-form, .contact-details {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2, .contact-details h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
     background-color: #ffcc00;
-    height: 100vh;
 }
 
 /*******Main End*************************/

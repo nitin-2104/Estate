@@ -19,6 +19,20 @@
         margin-bottom: 10px;
     }
 
+
+
+
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-form, .contact-details {
+        margin-bottom: 20px;
+    }    
+    
+    
+    
     /******Footer Start*************/
     #footer {
         background-color: #333;
