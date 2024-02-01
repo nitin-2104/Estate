@@ -20,19 +20,18 @@ html , body{
 /********Header Start*********************/
 
 #header {
-    background-color: #670f6d;
+
     height: 3em;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    /* position: fixed; */
-    /* width: 87.1em; */
+    margin-top: 30px;
+    display: flex;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Ysabeau Infant', sans-serif;
+    justify-content: space-between;
 }
 
-.logo {
-    color: #ffffff;
-    font-size: 1.5em;
-}
+
 
 nav ul {
     list-style: none;
@@ -47,7 +46,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -59,10 +58,32 @@ nav a:hover {
 /********Header End*********************/
 
 /********Main Start***************/
-
 #page1{
-    background-color: aqua;
+        /* background-color: aqua; */
+    margin-top: 20px;
+    background: url(../images/page1_img1.jpg);
     height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation: changeImage 5s /*duration timing-function*/ 2s ease infinite;
+    
+}
+
+/* Added keyframes for sliding animation */
+
+@keyframes changeImage {
+    0%{
+        background: url(../images/page1_img1.jpg) no-repeat;
+        background-size: 100% 100%;
+    }
+    50%{
+        background: url(../images/page1_img2.jpg) no-repeat;
+        background-size: 100% 100%;
+    }
+    100%{
+        background: url(../images/page1_img3.jpg) no-repeat;
+        background-size: 100% 100%;
+    }
 }
 
 #page2{
@@ -72,6 +93,16 @@ nav a:hover {
 
 #page3{
     background-color: blue;
+    height: 100vh;
+}
+
+#page4{
+    background-color: rgb(246, 246, 13);
+    height: 100vh;
+}
+
+#page5{
+    background-color: rgb(255, 30, 0);
     height: 100vh;
 }
 
@@ -100,7 +131,8 @@ nav a:hover {
 
 .contact-details {
     flex: 1;
-    padding: 20px;
+    padding: 53px; /*Added margin and padding before only padding of 20px*/
+    margin: 45px ;
     justify-content: space-around;
     background-color: #b3cfbc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
