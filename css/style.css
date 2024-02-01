@@ -8,14 +8,25 @@ html , body{
     width: 100%;
 }
 
+/* body{
+    background-color: #747272;
+}
+ */
+*::selection{
+    color: #fff;
+    background: rgb(88, 15, 141);
+}
+
 /********Header Start*********************/
 
-header {
+#header {
     background-color: #670f6d;
-    padding: 15px;
+    height: 3em;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* position: fixed; */
+    /* width: 87.1em; */
 }
 
 .logo {
@@ -49,13 +60,25 @@ nav a:hover {
 
 /********Main Start***************/
 
-main {
-    background-color: cadetblue;
-    height: 100%;
-    width: 100%;
+#page1{
+    background-color: aqua;
+    height: 100vh;
 }
 
+#page2{
+    background-color: rgb(69, 7, 96);
+    height: 100vh;
+}
 
+#page3{
+    background-color: blue;
+    height: 100vh;
+}
+
+#page4{
+    background-color: #ffcc00;
+    height: 100vh;
+}
 
 /*******Main End*************************/
 
@@ -63,8 +86,10 @@ main {
 
 /*******Footer Start***********/
 
-footer {
+#footer {
     background-color: #333;
+    height: 50vh;
+    /* width: 100%; */
     color: #fff;
     padding: 30px 0;
 }
@@ -72,7 +97,7 @@ footer {
 .footer-container {
     display: flex;
     justify-content: space-around;
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
