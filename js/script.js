@@ -35,35 +35,101 @@ LocomotiveAnimation();
 
 
 // function cursorAnimation() {
+//   // var realestate=document.querySelector("#main")
+//   // var btn=document.querySelector("#estate")
+//   // realestate.addEventListener("mouseenter", function() {
+//   //   gsap.to(btn,{
+//   //     scale:1,
+//   //     opacity:1
 
-//   document.addEventListener("mousemove", function(dets){
-//     gsap.to("#cursor", {
-//         left:dets.x,
-//         top:dets.y
+//   //   })
+//   // })
+//   // realestate.addEventListener("mouseleave", function() {
+//   //   gsap.to(btn,{
+//   //     scale:0,
+//   //     opacity:0
+
+//   //   })
+//   // })
+//   // realestate.addEventListener("mousemove", function(dets) {
+//   //   gsap.to(btn,{
+//   //     left:dets.x-80,
+//   //     top:dets.y-80
+
+//   //   })
+//   // })
+
+//   /*****************************************page 1*/ 
+
+//   var realestate1=document.querySelector("#page1")
+//   var btn1=document.querySelector("#estate1")
+//   realestate1.addEventListener("mouseenter", function() {
+//     gsap.to(btn1,{
+//       scale:1,
+//       opacity:1
+
 //     })
-// })
+//   })
+//   realestate1.addEventListener("mouseleave", function() {
+//     gsap.to(btn1,{
+//       scale:0,
+//       opacity:0
 
-// document.querySelector("#main").addEventListener("mouseenter", function(){
-// gsap.to("#cursor",{
-//     transform: 'translate(-50%,-50%) scale(1)'
-// })
-// }) 
+//     })
+//   })
+//   realestate1.addEventListener("mousemove", function(dets) {
+//     gsap.to(btn1,{
+//       left:dets.x-80,
+//       top:dets.y-80
+
+//     })
+//   })
 
 
-//     document.querySelectorAll(".child").forEach(function (element) {
-//         element.addEventListener("mouseenter", function(){
-//             gsap.to("#cursor",{
-//             transform: "translate(-50%,-50%) scale(1)"
-//             });
-//         });
-//         element.addEventListener("mouseleave", function(){
-//             gsap.to("#cursor",{
-//             transform: "translate(-50%,-50%) scale(0)"
-//             });
-//         });    
-//     });
+//     /*****************************************page 2*/ 
+
+//     var realestate2=document.querySelector("#page2")
+//     var btn2=document.querySelector("#estate2")
+//     realestate2.addEventListener("mouseenter", function() {
+//       gsap.to(btn2,{
+//         scale:1,
+//         opacity:1
+  
+//       })
+//     })
+//     realestate2.addEventListener("mouseleave", function() {
+//       gsap.to(btn2,{
+//         scale:0,
+//         opacity:0
+  
+//       })
+//     })
+//     realestate2.addEventListener("mousemove", function(dets) {
+//       gsap.to(btn2,{
+//         left:dets.x-80,
+//         top:dets.y-80
+  
+//       })
+//     })
 
 // }
 
 
 // cursorAnimation();
+
+
+
+
+
+// your-script.js
+document.addEventListener("DOMContentLoaded", function () {
+  gsap.to('#my-image', {
+    rotate: 360, // Rotate 360 degrees around its own axis
+    transformOrigin: 'center center', // Set the transform origin to the center
+    ease: 'power1.inOut', // Use a normal easing function
+    duration: 12, // Set the duration for one repetition
+    repeat: -1, // Repeat the animation for the specified number of repetitions
+    // yoyo: true, // Play the animation in reverse after each repetition
+    repeatDelay: 0, // Set the delay between repetitions
+  });
+});

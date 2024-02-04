@@ -96,10 +96,151 @@ nav a:hover {
     }
 }
 
-#page2{
-    background-color: rgb(69, 7, 96);
-    height: 100vh;
+#estate{
+    padding: 3vw 2vw;
+    background-color: #000000;
+    color: #fff;
+    font-size: 1vw;
+    position: fixed;
+    text-transform: uppercase;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
 }
+
+#page1 #estate1{
+    padding: 3vw 2vw;
+    background-color: #c9bf0a;
+    color: #fff;
+    font-size: 1vw;
+    position: fixed;
+    text-transform: uppercase;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+}
+
+
+#page2 #estate2{
+    padding: 3vw 2vw;
+    background-color: #c90a14;
+    color: #fff;
+    font-size: 1vw;
+    position: fixed;
+    text-transform: uppercase;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+}
+
+
+
+
+
+
+
+#page2{
+    /* padding-top: 5px; */
+    height: 110vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    /* margin: 0;
+    padding: 0; */
+    }
+
+    #page2 .about-us img{
+    /* height: 50px; */
+    /* width: 50px; */
+    position: absolute;
+    /* padding-bottom: 30em; */
+    
+
+   }
+
+#my-image {
+    background-color: transparent;
+    width: 500px;
+    height: 500px;
+    margin-top: -20px;
+    margin-left: 60px;
+    
+    
+}
+
+/* 
+    .about-us img{
+    transition: 1s ease;
+    }
+    
+    .about-us img:hover{
+    -webkit-transform: rotateZ(-10deg);
+    -ms-transform: rotateZ(-10deg);
+    transform: rotateZ(-10deg);
+    transition: 1s ease;
+    } */
+    
+    #page2 .container {
+    height: 90vh;
+    width: 100%;
+    /* margin:  auto; */
+    padding-left: 45vw;
+    /* padding-top: 0vh; */
+    }
+
+    #page2 h2 {
+    color: #333;
+    }
+
+    #page2 p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.section-title {
+
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+}
+
+.section-title h2 {
+    padding-top: 1px;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    padding-bottom: 0;
+    color: #1a0101;
+    position: relative;
+    z-index: 2;
+}
+
+.section-title span {
+    position: absolute;
+    top: 50px;
+    color: #e2e4ea;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 62px;
+    text-transform: uppercase;
+    line-height: 0;
+}
+
+.section-title p {
+    font-size: 25px;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
+
 
 #page3{
     background-color: blue;
