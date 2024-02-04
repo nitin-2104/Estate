@@ -243,9 +243,46 @@ nav a:hover {
 
 
 #page3{
-    background-color: blue;
+    background-color: rgb(249, 249, 249);
     height: 100vh;
+    /* display: flex; */
 }
+
+/* Swiper Code Staeted */
+
+.box {
+    /* border: 5px solid black; */
+    background-color: rgb(199, 255, 255);
+    height: 50%;
+    width: 100%;
+
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+
+    display: block;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+
+
 
 #page4{
     background-color: rgb(246, 246, 13);
@@ -450,7 +487,6 @@ button:active {
     width: 60px;
     transition: 0.3s;
   }
-
 
 
 /****Footer End******/
