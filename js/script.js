@@ -159,3 +159,85 @@ function BlobAnimation(){
 
 BlobAnimation();
 
+const gym=document.getElementById('gym');
+const swim=document.getElementById('swim');
+const security=document.getElementById('security');
+const club=document.getElementById('club');
+const wifi=document.getElementById('wifi');
+const reservation=document.getElementById('reservation');
+const temple=document.getElementById('temple');
+function changeGym(){
+    gym.style.background="url('https://images.squarespace-cdn.com/content/v1/5ada11772714e5eb213ab1df/1654290316961-1G3DBLPINKF8KJ4QD2WH/Web_09.jpg?format=1000w')"
+    gym.style.backgroundSize="100% 100%"
+    gym.innerText=""
+    
+}
+function backGym(){
+    gym.style.background=""
+    gym.innerHTML='<br><br><img src="images/Gym.png" alt="">  <br> <h4>Gym</h4>'
+}
+function changeSwim(){
+    swim.style.background="url('https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
+    swim.style.backgroundSize="100% 100%"
+    swim.innerHTML=""
+}
+function backSwim(){
+    swim.style.background=""
+    swim.innerHTML='<br><br><img src="images/Swim.png" alt="">  <br> <h4>Swimming</h6></div>'
+}
+function changeSecurity(){
+    security.style.background="url('https://images.unsplash.com/photo-1581568736305-49a04e012c13?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
+    security.style.backgroundSize="100% 100%"
+    security.innerHTML=""
+}
+function backSecurity(){
+    security.style.background=""
+    security.innerHTML='br><br><img src="images/Sec.png" alt="">  <br> <h4>Security</h4>'
+}
+function changeReservation(){
+    reservation.style.background="url('https://media.istockphoto.com/id/1393093359/photo/search-for-air-travel-information-air-ticket-booking-for-travel.jpg?s=612x612&w=0&k=20&c=vjx4BAdbvsa-6DNt8uO3VkAKsZ2eTyhJA6rBAe4zFig=')"
+    reservation.style.backgroundSize="100% 100%"
+    reservation.innerHTML=""
+}
+function backReservation(){
+    reservation.style.background=""
+    reservation.innerHTML='<br><br><img src="images/reservation.png" alt="">  <br> <h4>Travel Booking</h4>'
+}
+function changeTemple(){
+    temple.style.background="url('https://5.imimg.com/data5/ANDROID/Default/2022/12/OD/FY/PE/97165616/product-jpeg-500x500.jpg')"
+    temple.style.backgroundSize="100% 100%"
+    temple.innerHTML=""
+}
+function backTemple(){
+    temple.style.background=""
+    temple.innerHTML='<br><br><img src="images/Tem.png" alt="">  <br> <h4>Temple</h4>'
+}
+function changeWifi(){
+    wifi.style.background="url('https://plus.unsplash.com/premium_photo-1677486394561-6e660bc9879e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2lmaXxlbnwwfHwwfHx8MA%3D%3D')"
+    wifi.style.backgroundSize="100% 100%"
+    wifi.innerHTML=""
+}
+function backWifi(){
+    wifi.style.background=""
+    wifi.innerHTML='<br><br><img src="images/wifi.png" alt=""> <br>  <h4>Free-Wifi</h4>'
+}
+function changeElectricity(){
+    electricity.style.background="url('https://images.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/06/27/Pictures/hindustan-generators-society-gurgaon-housing-wednesday-parveen_a7d711b0-7a00-11e8-8d5f-3f0c905295d2.jpg')"
+    electricity.style.backgroundSize="100% 100%"
+    electricity.innerHTML=""
+}
+function backElectricity(){
+    electricity.style.background=""
+    electricity.innerHTML=' <br><br><img src="images/Elec.png" alt=""> <br>  <h4>Electricity</h4>'
+}
+
+function changeClub(){
+    club.style.background="url('https://i.pinimg.com/236x/44/b0/9e/44b09e2643e84aa1b464fe5df6ec64e6.jpg')"
+    club.style.backgroundSize="100% 100%"
+    club.innerHTML=""
+}
+function backClub(){
+    club.style.background=""
+    club.innerHTML='<br><br><img src="images/Club.png" alt="">  <br> <h4>Club</h4>'
+}
+
