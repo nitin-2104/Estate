@@ -125,7 +125,7 @@ function SwiperSliding(){
         slidesPerView: 3,
         spaceBetween: 30,
         autoplay: {
-            delay: 2000,
+            delay: 2500,
             disableOnInteraction: false,
             pauseOnMouseEnter: true // Used for stop slider while hovering
         },
@@ -138,6 +138,36 @@ function SwiperSliding(){
 }
 
 SwiperSliding();
+
+
+function SwiperSliding1(){
+    document.addEventListener("DOMContentLoaded", function() {
+      var swiper = new Swiper(".mySwiper1", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          autoplay: {
+              delay: 2000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true // Used for stop slider while hovering
+          },
+          pagination: {
+              el: ".swiper-pagination1",
+              clickable: true,
+          },
+      });
+    });
+  }
+  
+  SwiperSliding1();
+  
+  
+
+
+
+
+
+
+
 
 
 
@@ -241,3 +271,48 @@ function backClub(){
     club.innerHTML='<br><br><img src="images/Club.png" alt="">  <br> <h4>Club</h4>'
 }
 
+
+
+
+/***text****/
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const texts = ["UNLOCKING DOORS", "OPENING PATHWAYS", "GUIDING JOURNEYS", "WELCOMING YOU", "LEADING YOU"]; // Array of texts to display
+    let index = 0;
+    let letterIndex = 0;
+    let currentText = "";
+    let typingSpeed = 200; // Adjust typing speed as needed
+
+    function type() {
+        if (letterIndex < texts[index].length) {
+            currentText += texts[index].charAt(letterIndex);
+            document.getElementById("typing-text").innerText = currentText;
+            letterIndex++;
+            setTimeout(type, typingSpeed);
+        } else {
+            setTimeout(erase, typingSpeed * 2); // Wait before erasing text
+        }
+    }
+
+    function erase() {
+        if (currentText.length > 0) {
+            currentText = currentText.substring(0, currentText.length - 1);
+            document.getElementById("typing-text").innerText = currentText;
+            setTimeout(erase, typingSpeed / 2);
+        } else {
+            index = (index + 1) % texts.length; // Move to next text
+            letterIndex = 0;
+            setTimeout(type, typingSpeed / 2); // Start typing next text
+        }
+    }
+
+    setTimeout(type, typingSpeed); // Start typing animation
+});
+
+
+
+
+
+/****end******* */

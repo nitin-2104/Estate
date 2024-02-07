@@ -21,12 +21,14 @@ html , body{
 
     height: 3em;
     align-items: center;
+    background-color: transparent;
     margin-top: 30px;
     display: flex;
     font-family: 'Kanit', sans-serif;
     font-family: 'Nunito Sans', sans-serif;
     font-family: 'Ysabeau Infant', sans-serif;
     justify-content: space-between;
+    position: absolute;
 }
 
 
@@ -36,10 +38,15 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    text-align: right;
+    margin-left: 12em;
 }
 
 nav li {
-    margin-right: 20px;
+    margin-right: 9px;
+    padding: 5px;
+    font-size: 20px;
+    text-decoration: underline;
 }
 
 nav a {
@@ -53,13 +60,21 @@ nav a:hover {
     color: #ffcc00;
 }
 
+#header #centre{
+    text-align: center;
+    /* margin-left: 10vw; */
+    padding-left: 20vw;
+    font-size: 20px;
+    /* background-color: #c9ece4; */
+}
+
 /********Header End*********************/
 
 /********Main Start***************/
 #page1{
         /* background-color: aqua; */
-    margin-top: 20px;
-    background: url(../images/page1_img1.jpg);
+    /* margin-top: 20px; */
+    background: url(../images/n1.png);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -71,7 +86,7 @@ nav a:hover {
 
 @keyframes changeImage {
     0%{
-        background: url(../images/page1_img1.jpg) no-repeat;
+        background: url(../images/n1.png) no-repeat;
         background-size: 100% 100%;
     }
     50%{
@@ -96,17 +111,69 @@ nav a:hover {
     scale: 0;
 }
 
-#page1 #estate1{
-    padding: 3vw 2vw;
-    background-color: #c9bf0a;
-    color: #fff;
-    font-size: 1vw;
-    position: fixed;
-    text-transform: uppercase;
-    border-radius: 50%;
-    opacity: 0;
-    scale: 0;
+#page1 h1{
+    font-size: 8rem;
+    letter-spacing: -2px;
+    line-height: 32vh;
+    position: absolute;
+    /* border: 6px solid rgb(0, 0, 0);  */
+    padding-right: 18vw;
+    background:linear-gradient(to right , rgb(255, 255, 255),#ff9999 45%, #ffffff);
+    background-size: 150% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 2s linear infinite;
 }
+
+@keyframes gradient{
+    0%{background-position:0% 75%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 70%;}
+
+}
+
+/*animation*/
+
+#page1 .typing-container {
+    /* margin: 100px auto; */
+    padding-top: 20vh;
+    width: 90%;
+    text-align: left;
+}
+
+#page1 .typing-text {
+    font-size: 8rem;
+    /* color: #333; */
+    background:linear-gradient(to left , rgb(0, 0, 0),#ff9999 35%, #000000);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 2s linear infinite;
+
+
+    border-right: 2px solid #333; /* Cursor effect */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflow text */
+    /* animation: typing 10s steps(10, end); Typing animation */
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+/*********end********/
+
 
 
 #page2 #estate2{
@@ -148,12 +215,23 @@ nav a:hover {
 
    }
 
+
+   #page2 .about-us .upImage{
+    position: absolute;
+    justify-content: center;
+    text-align: center;  
+    padding: 10vh;
+    z-index: 9;
+
+
+   }
+
 #my-image {
     background-color: transparent;
-    width: 500px;
-    height: 500px;
-    margin-top: -20px;
-    margin-left: 60px;
+    width: 650px;
+    height: 650px;
+    margin-top: -80px;
+    margin-left: 5px;
     
     
 }
@@ -224,6 +302,7 @@ nav a:hover {
     margin-bottom: 0;
     position: relative;
     z-index: 2;
+    /* margin-right: 5em; */
 }
 
 
@@ -254,7 +333,7 @@ nav a:hover {
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #c9ece4;
+    background: #e2ebe9;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -350,45 +429,135 @@ nav a:hover {
     background-size: 100% 100%; */
  }
 
-#page5{
+
+
+
+
+
+ #page5{
     background-color: #eef4eeb8;
-    height: 100vh;
+    height: 70vh;
+    /* display: flex; */
 }
+
+
+#page5 .box {
+    /* border: 5px solid black; */
+    height: 10vh;
+    width: 100%;
+    border-radius: 10%;
+
+}
+
+#page5 .swiper {
+    width: 100%;
+    height: 37vh;
+}
+
+#page5 .swiper-slide {
+    text-align: center;
+    font-size: 11px;
+    background: #e7e6e7;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    flex-direction: column;
+    justify-content: right;
+    border-radius: 10%;
+    padding: 3em 4em;
+}
+
+#page5 .swiper-slide img {
+
+    /* display: block; */
+    width: 20%;
+    height: 35%;
+    /* position: relative; */
+    /* z-index: 99; */
+    margin-bottom: 2vh;
+    border-radius: 70%;
+    box-shadow: #c90a14;
+}
+
+
+/*******************2nd slide**********/
+#page5 .box1 {
+    /* border: 5px solid black; */
+    height: 10vh;
+    width: 100%;
+    border-radius: 10%;
+
+}
+
+#page5 .swiper1 {
+    width: 100%;
+    height: 37vh;
+}
+
+#page5 .swiper-slide1 {
+    text-align: right;
+    font-size: 18px;
+    background: #c9ece4;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    border-radius: 10%;
+    padding: 1em;
+}
+
+#page5 .swiper-slide1 img {
+
+    display: block;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
 
 /********Contact start*****************************/
 
 .contact-section {
     background-color: #eef4eeb8;
-    padding: 50px 0;
-    height: 95vh;
+    /* padding: 10px 0; */
+    height: 100vh;
 }
 
 .contact-container {
     display: flex;
     max-width: 1400px;
     margin: 0 auto;
+    margin-bottom: 80px;
 }
 
 .contact-form {
     flex: 2;
-    padding: 30px;
-    /* margin-top: 50px; */
-    margin-bottom: 120px;
+    padding: 20px;
+    margin-top: 20vh;
+    /* margin-bottom: 50vh; */
+    /* margin-top: 60px; */
     margin-left: 40px;
-    background-color: #a6b7ab;
+    background-color: #d7dcd8;
     justify-content: space-around;
 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
 }
 
 .contact-details {
     flex: 1;
     padding: 53px; /*Added margin and padding before only padding of 20px*/
-    margin: 40px ;
-    margin-left: 120px;
+    margin-top: 20vh ;
+    margin-left: 30px;
+    margin-right: 50px;
     justify-content: space-around;
-    background-color: #b3cfbc;
+    background-color: #d4d6d4;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
 }
@@ -495,7 +664,7 @@ button:active {
 
 #footer {
     background-color: #333;
-    height: 50vh;
+    height: 55vh;
     /* width: 100%; */
     color: #fff;
     padding: 30px 0;
@@ -564,6 +733,15 @@ button:active {
     font-size: 20px;
     text-align: center;
     /* padding-bottom: 10px; */
+
+  }
+
+   #footer .downImage{
+    position: absolute;
+    padding-left: 50px;
+    /* margin-top: 10px; */
+    
+
 
   }
 
