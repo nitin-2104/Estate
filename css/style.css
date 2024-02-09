@@ -199,8 +199,10 @@ nav a:hover {
     height: 130vh;
     background-color: #eef4eeb8;
     width: 100%;
-    overflow: hidden;
-    position: relative;
+    /* overflow: hidden; */
+    position: flex;
+    flex-wrap: wrap;
+    
     display: grid;
     /* margin: 0;
     padding: 0; */
