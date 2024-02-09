@@ -53,7 +53,7 @@ animation: changeImage 20s /*duration timing-function*/ 2s ease infinite;
 #page1 h1{
 font-size: 2.5rem;
 letter-spacing: -2px;
-line-height: 10vh;
+line-height: 6vh;
 position: absolute;
 /* border: 6px solid rgb(0, 0, 0);  */
 padding-right: 18vw;
@@ -75,7 +75,7 @@ animation: gradient 2s linear infinite;
 
 #page1 .typing-container {
 /* margin: 100px auto; */
-padding-top: 35vh;
+padding-top: 17vh;
 width: 90%;
 text-align: left;
 }
@@ -105,19 +105,7 @@ to {
 }
 }
 
-
-
-
-
-
-
 /*********end********/
-
-
-
-
-
-
 
 
 /******about-start**********/
@@ -215,6 +203,117 @@ to {
 }
 
 /******all heading end********/
+
+/********properties start*********/
+#page3{
+    background-color: #eef4eeb8;
+    height: 70vh;
+    /* display: flex; */
+    }
+
+
+    .box {
+    /* border: 5px solid black; */
+    height: 10vh;
+    width: 100%;
+    border-radius: 20%;
+    }
+
+    .swiper {
+    width: 100%;
+    height: 50vh;
+    }
+
+    .swiper-slide {
+    text-align: center;
+    font-size: 25px;
+    background: #e2ebe9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 18%;
+    }
+
+    .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+}
+
+/********properties end**************/
+
+
+/********amenities start***********/
+
+#page4{
+    
+    background-color: #eef4eeb8;
+    height: 120vh;
+    }
+
+    .amenities-list{
+    /* border: 1px solid black; */
+    height: 70vh;
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: space-around;
+    align-items: center;
+    }
+
+    .icons{
+    height: 25vh;
+    border-radius: 40px;
+    flex-basis: 50%;
+  
+    }
+    .amenities-list  #gym:hover{
+    
+    cursor: pointer;
+    }
+
+    .amenities-list  #swim:hover{
+    cursor: pointer;
+    }
+
+    .amenities-list  #security:hover{
+    cursor: pointer;
+    }
+
+    .amenities-list  #temple:hover{
+    cursor: pointer;
+    }
+
+    .amenities-list  #club:hover{
+    cursor: pointer;
+    }
+
+    .amenities-list  #electricity:hover{
+    cursor: pointer;
+    }
+
+    .amenities-list  #free-wifi:hover{
+    cursor: pointer;
+    }
+
+    .amenities-list  #reservation:hover{
+    cursor: pointer;
+}
+
+
+/********amenities end************/
+
+
+#page5{
+    background-color: #eef4eeb8;
+    height: 60vh;
+    /* display: flex; */
+}
+
+
 
 
 

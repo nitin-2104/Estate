@@ -120,30 +120,40 @@ locomotiveAnimation();
 
 
 function SwiperSliding(){
-  document.addEventListener("DOMContentLoaded", function() {
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true // Used for stop slider while hovering
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
+    document.addEventListener("DOMContentLoaded", function() {
+      var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 'auto', // Set initial slides per view to 'auto'
+          spaceBetween: 30,
+          autoplay: {
+              delay: 2500,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true // Used for stop slider while hovering
+          },
+          pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+          },
+          breakpoints: {
+              // Define breakpoints for different screen sizes
+              768: {
+                  slidesPerView: 3, // Show 3 slides per view on screens equal to or greater than 768px
+              },
+              576: {
+                  slidesPerView: 1, // Show 1 slide per view on screens equal to or greater than 576px
+              }
+              // Add more breakpoints as needed
+          }
+      });
     });
-  });
-}
+  }
+  
+  SwiperSliding();
+  
 
-SwiperSliding();
-
-
-function SwiperSliding1(){
+  function SwiperSliding1(){
     document.addEventListener("DOMContentLoaded", function() {
       var swiper = new Swiper(".mySwiper1", {
-          slidesPerView: 3,
+          slidesPerView: 'auto', // Set initial slides per view to 'auto'
           spaceBetween: 30,
           autoplay: {
               delay: 2000,
@@ -154,6 +164,16 @@ function SwiperSliding1(){
               el: ".swiper-pagination1",
               clickable: true,
           },
+          breakpoints: {
+              // Define breakpoints for different screen sizes
+              768: {
+                  slidesPerView: 3, // Show 3 slides per view on screens equal to or greater than 768px
+              },
+              576: {
+                  slidesPerView: 1, // Show 1 slide per view on screens equal to or greater than 576px
+              }
+              // Add more breakpoints as needed
+          }
       });
     });
   }
