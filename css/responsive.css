@@ -293,6 +293,18 @@ body{
         z-index: 2;
     }
 
+    .icons{
+    
+        height: 35vh;
+        /* width: 30vw; */
+        /* border: 1px solid red; */
+        border-radius: 40px;
+        flex-basis: 50%;
+        
+    }
+    #page4{
+        height: 170vh;
+    }
 
 
 }
