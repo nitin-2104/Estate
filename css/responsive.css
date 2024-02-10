@@ -1,3 +1,73 @@
+/******about-start**********/
+
+@media (max-width: 1400px) {
+
+    .img-overlap {
+        position: relative;
+        top: 8vh;
+        left: 0;
+    }
+    .blob-img {
+        position: absolute;
+        top: -11vh;
+        left:  -5vw;
+    }
+
+  }
+
+
+  @media (max-width: 991px) {
+
+    .img-overlap {
+        position: relative;
+        top: 1vh;
+        left: 5vw;
+    }
+    .blob-img {
+        position: absolute;
+        top: -11vh;
+        left:  -5vw;
+    }
+
+
+  }
+
+  @media (max-width: 768px) {
+
+    .img-overlap {
+        position: relative;
+        top: 1vh;
+        left: 0;
+    }
+    .blob-img {
+        position: absolute;
+        top: 1vh;
+    }
+    
+  }
+
+  @media (max-width: 575px) {
+    .img-overlap {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .blob-img {
+        position: absolute;
+        top: 1vh;
+    }
+
+  }
+
+/*about-end*/
+
+
+
+
+
+
+
 @media (max-width:600px){
     
 #header {
@@ -107,57 +177,6 @@ to {
 
 /*********end********/
 
-
-/******about-start**********/
-
-#page2{
-    height: 150vh;
-    width: 100%;
-    overflow: hidden;
-    }
-
-    #page2 .about-us img{
-    /* background-color: aqua; */
-    height: 300px; 
-     width: 300px;
-     margin-left: 15vw;
-     justify-content: center;
-     object-position: center;
-     text-align: center;
-     position: relative;
-     }
-
-
-    #page2 .about-us .upImage{
-    /* background-color: blue; */
-    position: absolute;
-    z-index: 99;
-    margin-top: -15vh;
-    margin-left: -20vw;
-    }
-
-    #my-image {
-    /* background-color: rgb(73, 178, 73); */
-    width: 350px;
-    height: 350px;
-    margin-top: -80px;
-    margin-left: 5px;
-    }
-
-    #page2 .container {
-    height: 90vh;
-    width: 100%;
-    /* margin:  auto; */
-    padding: 2.5vh;
-    text-align: justify;
-    /* padding-top: 0vh; */
-    }
-
-    #page2 p {
-    margin-bottom: 5px;
-}
-
-/*about-end*/
 
 
 /*****all heading start*******/

@@ -191,23 +191,23 @@ function SwiperSliding(){
 
 
 
-function BlobAnimation(){
+// function BlobAnimation(){
 
-  document.addEventListener("DOMContentLoaded", function () {
-    gsap.to('#my-image', {
-      rotate: 360, // Rotate 360 degrees around its own axis
-      transformOrigin: 'center center', // Set the transform origin to the center
-      ease: 'power1.inOut', // Use a normal easing function
-      duration: 12, // Set the duration for one repetition
-      repeat: -1, // Repeat the animation for the specified number of repetitions
-      // yoyo: true, // Play the animation in reverse after each repetition
-      repeatDelay: 0, // Set the delay between repetitions
-    });
-  });
+//   document.addEventListener("DOMContentLoaded", function () {
+//     gsap.to('#my-image', {
+//       rotate: 360, // Rotate 360 degrees around its own axis
+//       transformOrigin: 'center center', // Set the transform origin to the center
+//       ease: 'power1.inOut', // Use a normal easing function
+//       duration: 12, // Set the duration for one repetition
+//       repeat: -1, // Repeat the animation for the specified number of repetitions
+//       // yoyo: true, // Play the animation in reverse after each repetition
+//       repeatDelay: 0, // Set the delay between repetitions
+//     });
+//   });
 
-}
+// }
 
-BlobAnimation();
+// BlobAnimation();
 
 const gym=document.getElementById('gym');
 const swim=document.getElementById('swim');
