@@ -331,15 +331,6 @@ button:hover {
       }
     
     
-       #footer .downImage{
-        position: absolute;
-        padding-top: 35vh;
-        padding-left: 60vw;
-        
-    
-    
-      }
-    
     
 
 
@@ -659,14 +650,6 @@ button:hover {
       }
     
     
-       #footer .downImage{
-        position: absolute;
-        padding-top: 35vh;
-        padding-left: 60vw;
-        
-    
-    
-      }
     
     
 
@@ -919,7 +902,7 @@ button:hover {
     
 /******Footer Start*************/
     #footer {
-        height: 150vh;
+        height: 80vh;
     }
     
     
@@ -987,14 +970,6 @@ button:hover {
       }
     
     
-       #footer .downImage{
-        position: absolute;
-        padding-top: 35vh;
-        padding-left: 60vw;
-        
-    
-    
-      }
     
     
 
@@ -1085,7 +1060,7 @@ button:hover {
 
     .img-overlap {
         position: relative;
-        top: 8vh;
+        top: 1vh;
         left: 0;
     }
     .blob-img {
@@ -1200,13 +1175,21 @@ button:hover {
 
     /*********Testinomials start****************/
     #page5{
-    height: 90vh;
+    height: 80vh;
     }
 
     #page5 .swiper {
         width: 50%;
-        height: 50vh;
+        height: 40vh;
     }
+
+    #page5 .swiper-slide img {
+
+        width: 50%;
+        height: 30%;
+        margin-bottom: 0;
+    }
+    
         
     /*********Testinomials end****************/
 
@@ -1218,7 +1201,7 @@ button:hover {
 }
 
 .contact-section {
-    height: 130vh;
+    height: 90vh;
 }
 
 .contact-form {
@@ -1248,7 +1231,7 @@ button:hover {
     
 /******Footer Start*************/
     #footer {
-        height: 150vh;
+        height: 110vh;
     }
     
     
@@ -1316,14 +1299,6 @@ button:hover {
       }
     
     
-       #footer .downImage{
-        position: absolute;
-        padding-top: 35vh;
-        padding-left: 60vw;
-        
-    
-    
-      }
     
     
 
