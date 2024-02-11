@@ -32,8 +32,10 @@ html , body{
 }
 
 .header #company-name{
-    position: relative;
-    /* background-color: #16df7e; */
+    /* align-items: center; */
+    
+    max-width: 50%;
+    background-color: #16df7e;
     border: 0.2vw dotted;
     padding: 0.3vw;
 }
@@ -122,10 +124,10 @@ html , body{
 }
 
 #page1 h1{
-    font-size: 8rem;
+    font-size: 4rem;
     letter-spacing: -2px;
     line-height: 32vh;
-    position: absolute;
+    /* position: absolute; */
     /* border: 6px solid rgb(0, 0, 0);  */
     padding-right: 12vw;
     padding-right: 15vw;
@@ -147,15 +149,15 @@ html , body{
 
 #page1 .typing-container {
     /* margin: 100px auto; */
-    padding-top: 35vh;
+    padding-top: 55vh;
     width: 90%;
     text-align: left;
 }
 
 #page1 .typing-text {
-    font-size: 8rem;
+    font-size: 5rem;
     /* color: #333; */
-    background:linear-gradient(to left , rgb(255, 255, 255),#fefefe 45%, #ffffff);
+    background:linear-gradient(to left , rgb(255, 255, 255),#1c0034 45%, #ffffff);
     background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
