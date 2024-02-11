@@ -35,7 +35,7 @@ html , body{
     /* align-items: center; */
     
     max-width: 50%;
-    background-color: #16df7e;
+    /* background-color: #16df7e; */
     border: 0.2vw dotted;
     padding: 0.3vw;
 }
@@ -123,27 +123,6 @@ html , body{
     scale: 0;
 }
 
-#page1 h1{
-    font-size: 4rem;
-    letter-spacing: -2px;
-    line-height: 32vh;
-    /* position: absolute; */
-    /* border: 6px solid rgb(0, 0, 0);  */
-    padding-right: 12vw;
-    padding-right: 15vw;
-    background:linear-gradient(to right , rgb(255, 255, 255),#ff9999 45%, #ffffff);
-    background-size: 150% auto;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradient 2s linear infinite;
-}
-
-@keyframes gradient{
-    0%{background-position:0% 75%;}
-    50%{background-position:100% 50%;}
-    100%{background-position:0% 70%;}
-
-}
 
 /*animation*/
 
@@ -177,6 +156,30 @@ html , body{
     to {
         width: 100%;
     }
+
+}
+
+
+#page1 h1{
+    font-size: 4rem;
+    letter-spacing: -2px;
+    line-height: 32vh;
+    /* position: relative; */
+    /* border: 6px solid rgb(0, 0, 0);  */
+    padding-right: 12vw;
+    padding-right: 15vw;
+    background:linear-gradient(to right , rgb(255, 255, 255),#ff9999 45%, #ffffff);
+    background-size: 150% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 2s linear infinite;
+}
+
+@keyframes gradient{
+    0%{background-position:0% 75%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 70%;}
+
 }
 
 
